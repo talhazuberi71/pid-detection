@@ -149,7 +149,7 @@ Detection results are saved in the `runs/detect/pid_test/` directory. Each image
 
 2. **Dataset Download Fails**:
    - Check your internet connection
-   - Try downloading directly from https://github.com/ch-hristov/p-id-symbols
+   - Try downloading directly from https://www.kaggle.com/datasets/hristohristov21/pid-symbols/data
 
 3. **Training Errors**:
    - Ensure PyTorch is correctly installed
