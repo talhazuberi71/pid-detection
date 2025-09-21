@@ -15,33 +15,6 @@ This project implements an object detection system specialized for P&ID diagrams
 - Extracting engineering data from drawings
 - Quality control and verification
 
-## ✨ Features
-
-- **Symbol Detection**: Identifies various P&ID symbols with high accuracy
-- **Pretrained Model**: Includes a pretrained model for immediate use
-- **Custom Training**: Supports training on custom P&ID datasets
-- **Windows Compatible**: Fully compatible with Windows environments
-- **Easy Setup**: Simple installation and configuration
-- **Interactive Notebook**: Jupyter notebook for easy experimentation
-
-## 📁 Directory Structure
-
-```
-predict/
-├── data/                 # Sample P&ID diagrams for testing
-├── dataset/              # Downloaded dataset for training
-│   ├── images/           # Training images
-│   ├── labels/           # Training labels
-│   └── best.pt           # Pre-trained model
-├── model/                # Storage for trained models
-├── pid_preds/            # Storage for prediction results
-├── result/               # Output directory for predictions
-├── yolov5/               # YOLOv5 repository (cloned)
-├── yolov5_p&ids.ipynb    # Main Jupyter notebook
-├── requirements.txt      # Python dependencies
-└── README.md             # This documentation
-```
-
 ## 🚀 Setup & Installation
 
 ### Prerequisites
@@ -68,19 +41,6 @@ predict/
    jupyter notebook yolov5_p&ids.ipynb
    ```
 
-4. Follow the cells in the notebook for setup, training, and inference
-
-## 🛠️ Usage
-
-The project is organized as a Jupyter notebook with cells for different stages of the workflow:
-
-1. **Cell 1**: Setup YOLOv5 (clones repository and installs dependencies)
-2. **Cell 2**: Download P&ID dataset
-3. **Cell 3**: Extract dataset files
-4. **Cell 4**: Verify setup and (optionally) start training
-5. **Cell 5**: Run inference on P&ID diagrams
-6. **Training Verification Cell**: Verify training results and manage models
-
 ## 🏋️ Model Training
 
 The model is trained on a dataset of P&ID symbols with annotations. To train the model:
@@ -96,11 +56,6 @@ Training typically takes 1-4 hours depending on your hardware. With a GPU, it wi
 ## 🔮 Inference
 
 To run inference on P&ID diagrams:
-
-1. Place your P&ID diagram in the `data/` directory
-2. Update the `test_image` path in Cell 5 if needed
-3. Run Cell 5 to perform inference
-4. Results will be saved to `runs/detect/pid_test/`
 
 The inference results include:
 - Annotated images with bounding boxes
@@ -118,23 +73,6 @@ The model can detect various P&ID symbols including:
 - Control Devices
 
 Detection results are saved in the `runs/detect/pid_test/` directory. Each image will have corresponding text files with detection coordinates and class IDs.
-
-## ⚙️ Customization
-
-### Model Customization
-
-- You can adjust inference parameters in Cell 5:
-  - `--conf`: Confidence threshold (default: 0.25)
-  - `--iou`: IoU threshold (default: 0.45)
-  - `--img`: Input image size (default: 640)
-
-### Training Customization
-
-- You can modify training parameters in Cell 4:
-  - Batch size
-  - Epochs
-  - Image size
-  - Base model (YOLOv5s, YOLOv5m, YOLOv5l, YOLOv5x)
 
 ### Visualization Customization
 
