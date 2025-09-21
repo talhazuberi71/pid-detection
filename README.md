@@ -162,7 +162,7 @@ Detection results are saved in the `runs/detect/pid_test/` directory. Each image
 ## 🙏 Acknowledgements
 
 - [Ultralytics YOLOv5](https://github.com/ultralytics/yolov5) for the object detection framework
-- [P&ID Symbols Dataset](https://github.com/ch-hristov/p-id-symbols) for the training data
+- [P&ID Symbols Dataset](https://www.kaggle.com/datasets/hristohristov21/pid-symbols/data) for the training data
 - All contributors to the open-source libraries used in this project
 
 ---
