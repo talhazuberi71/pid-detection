@@ -2,7 +2,8 @@
 
 This project uses YOLOv5 to detect symbols in Piping and Instrumentation Diagrams (P&IDs). It can identify various engineering symbols commonly found in industrial diagrams, making it useful for automating the interpretation of technical drawings.
 
-![P&ID Detection Example](data/ss3.jpg)
+![P&ID Original Image](data/ss3.jpg)
+![P&ID Detection](data/ss3_labeled.jpg)
 
 
 ## 🔍 Overview
