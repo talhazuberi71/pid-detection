@@ -27,7 +27,7 @@ This project implements an object detection system specialized for P&ID diagrams
 
 1. Clone this repository:
    ```
-   git clone https://github.com/yourusername/pid-detection.git
+   git clone https://github.com/talhazuberi71/pid-detection.git
    cd pid-detection
    ```
 
